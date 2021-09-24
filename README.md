@@ -1,5 +1,5 @@
 # cocdiscordlink
-Implementation of reverendmike's [https://github.com/reverendmike/CocDiscordLinkAPI](CocDiscordLinkAPI) for Go.
+Implementation of reverendmike's [CocDiscordLinkAPI](https://github.com/reverendmike/CocDiscordLinkAPI) for Go.
 
 # Usage
     import "github.com/eslindsey/CocDiscordLinkGo"
