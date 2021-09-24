@@ -10,5 +10,5 @@ Implementation of reverendmike's [CocDiscordLinkAPI](https://github.com/reverend
     )
     
     func main() {
-        s, err := cocdiscordlink.New(username, password)
+        s, err := cocdiscordlink.New(Username, Password)
     }
