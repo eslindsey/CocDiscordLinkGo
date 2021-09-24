@@ -77,8 +77,9 @@ func (s *Session) GetLinksFromDiscordId(id string) (results []string, err error)
 		err = ErrNoResults
 		return
 	}
-	for _, v := range r {
-		results = append(results, v.PlayerTag)
+	results = make([]string, len(r))
+	for i, v := range r {
+		results[i] = v.PlayerTag
 	}
 	return
 }
