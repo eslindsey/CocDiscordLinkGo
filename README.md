@@ -2,7 +2,7 @@
 Implementation of reverendmike's [CocDiscordLinkAPI](https://github.com/reverendmike/CocDiscordLinkAPI) for Go.
 
 # Usage
-    import "github.com/eslindsey/CocDiscordLinkGo"
+    import "github.com/eslindsey/cocdiscordlink"
     
     const (
         Username = "The username assigned to your project by reverendmike"
