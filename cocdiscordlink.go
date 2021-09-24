@@ -28,7 +28,7 @@ type LinkResponse struct {
 const (
 	BaseUrl  = "https://cocdiscordlink.azurewebsites.net/api"
 	LoginUrl = BaseUrl + "/login"
-	LinksUrl = BaseUrl + "/links/%s"
+	LinksUrl = BaseUrl + "/links/"
 )
 
 var (
@@ -84,7 +84,7 @@ func (s *Session) GetLinksFromDiscordId(id string) (results []string, err error)
 }
 
 func (s *Session) getSingle(q string) (result []byte, err error) {
-	req, err := http.NewRequest("GET", LinksUrl + "/" + url.QueryEscape(q), nil)
+	req, err := http.NewRequest("GET", LinksUrl + url.QueryEscape(q), nil)
 	req.Header.Add("Authorization", "Bearer " + s.Token)
 	resp, err := client.Do(req)
 	if err != nil {
